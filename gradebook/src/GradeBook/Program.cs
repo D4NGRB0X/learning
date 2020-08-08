@@ -10,12 +10,10 @@ namespace GradeBook
             
             var book = new Book("SCI");
             book.AddGrade(89.5);
-            book.AddGrade(91.5);
-            book.AddGrade(95.75);
-            book.AddGrade(100);
-
-            //Console.WriteLine($"Grades = {book.get_Grades()}");
-            Console.WriteLine($"Average grade is {book.ComputeAverageGrade():N2}.");
+            book.AddGrade(83.25);
+            book.AddGrade(65.5);
+            book.AddGrade(74);
+            book.showStats();
         }
     }
 
