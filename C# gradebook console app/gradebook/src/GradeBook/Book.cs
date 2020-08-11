@@ -16,10 +16,9 @@ namespace GradeBook
         }
 
 
-
         public void AddGrade(double grade)
         {
-            if (grade >= 0 && grade <= 100)
+            if (grade >= 0 && grade <= 100) //left evaluates first
             {
                 grades.Add(grade);
             }
@@ -29,6 +28,9 @@ namespace GradeBook
             }
         }
 
+        public List<double> GetGrades(){
+            return grades;
+        }
         public double ComputeAverageGrade()
         {
             double result = 0.0;
@@ -43,19 +45,24 @@ namespace GradeBook
         public double getHighGrade()
         {
             double highGrade = double.MinValue;
-            foreach (var grade in grades)
+            int index = 0;
+            do
             {
-                highGrade = Math.Max(grade, highGrade);
+                highGrade = Math.Max(grades[index], highGrade);
+                index++;
             }
+            while(index < grades.Count);
             return highGrade;
         }
 
         public double getLowGrade()
         {
             double lowGrade = double.MaxValue;
-            foreach (var grade in grades)
+            int index = 0;
+            while(index < grades.Count)
             {
-                lowGrade = Math.Min(grade, lowGrade);
+                lowGrade = Math.Min(grades[index], lowGrade);
+                index++;
             }
             return lowGrade;
         }

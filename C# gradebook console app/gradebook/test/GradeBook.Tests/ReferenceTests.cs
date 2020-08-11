@@ -5,6 +5,17 @@ namespace GradeBook.Tests
 {
     public class BookTests
     {
+        [Fact]
+        public void AddGrade_Test(){
+            //arrange
+            var book = new Book("");
+            //action
+            book.AddGrade(105);
+            var grades = book.GetGrades();
+
+            //assert
+            Assert.True(grades.Count < 1);
+        }
         [Fact] //attribute
         public void BookCalculatesStats()
         {
