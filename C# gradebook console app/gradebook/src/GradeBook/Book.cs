@@ -7,12 +7,41 @@ namespace GradeBook
     {
 
         private List<double> grades;
-        public string Name;
+        // Long form property creation
+        // private string name; 
+        // public string Name{
+        //     get{
+        //         return name;
+        //     }
+        //     set{
+        //         if(!String.IsNullOrEmpty(value)){
+        //         name = value;
+        //         }
+        //         else{
+        //             throw new ArgumentException($"Invalid {nameof(name)}");
+        //         }
+        //     }
+        // }
 
-        public Book(string name)
+        public string Name{
+            get;
+            private set; // private does not allow modification once name is set Read only
+        }
+
+        readonly string category; //field cann only be changed in constructor
+        public const string INSTRUCTOR = "Professor X"; // immutable read only field public allows it to be displayed but cannot be manipulated
+
+        public Book(string name, string category) //constructor
         {
-            grades = new List<double>();
-            Name = name;
+            try{
+                
+                grades = new List<double>();
+                Name = name;
+                category;
+            }
+            catch(ArgumentException invalidNameExcaption){
+                Console.WriteLine(invalidNameExcaption.Message); 
+            }
         }
 
 
@@ -24,11 +53,11 @@ namespace GradeBook
             }
             else
             {
-                Console.WriteLine($"{grade} is not valid.");
+                throw new ArgumentException($"Invalid {nameof(grade)}");
             }
         }
 
-        public void AddLetterGrade(char letter){
+        public void AddLetterGrade(char letter){ //could also be AddGrade with different signature C# can differentiate based on signature "Method Overloading"
             switch(letter){
                 case 'A':
                     AddGrade(90.0);
