@@ -9,15 +9,25 @@ namespace GradeBook
         {
             
             var book = new Book("SCI");
-            book.AddGrade(89.5);
-            book.AddGrade(83.25);
-            book.AddGrade(65.5);
-            book.AddGrade(74);
+            var quit = false;
+            while(!quit){
+                Console.WriteLine("Please enter a grade or q to quit and compute.");
+                var userInput = Console.ReadLine();
+                if(userInput == "q"){
+                    quit=true;
+                }
+                else {
+                var grade = double.Parse(userInput);
+                book.AddGrade(grade);}
+                
+            };
+
             var stats = book.GetStats();
         
             Console.WriteLine($"Lowest grade = {stats.Low}");
             Console.WriteLine($"Highestest grade = {stats.High}");
             Console.WriteLine($"Average grade = {stats.Average}");
+            Console.WriteLine($"Overall letter grade is {stats.Letter}");
         }
     }
 
