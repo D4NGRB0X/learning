@@ -10,11 +10,11 @@ namespace GradeBook.Tests
             //arrange
             var book = new Book("");
             //action
-            book.AddGrade(105);
+            book.AddGrade(100);
             var grades = book.GetGrades();
 
             //assert
-            Assert.True(grades.Count < 1);
+            Assert.True(grades.Count >= 1);
         }
         [Fact] //attribute
         public void BookCalculatesStats()

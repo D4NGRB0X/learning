@@ -25,19 +25,19 @@ namespace GradeBook
 
         public string Name{
             get;
-            private set; // private does not allow modification once name is set Read only
+            set; // private does not allow modification once name is set Read only
         }
 
-        readonly string category; //field cann only be changed in constructor
+        //readonly string category; //field can only be changed in constructor
         public const string INSTRUCTOR = "Professor X"; // immutable read only field public allows it to be displayed but cannot be manipulated
 
-        public Book(string name, string category) //constructor
+        public Book(string name) //constructor
         {
             try{
                 
                 grades = new List<double>();
                 Name = name;
-                category;
+                //category;
             }
             catch(ArgumentException invalidNameExcaption){
                 Console.WriteLine(invalidNameExcaption.Message); 
@@ -50,12 +50,16 @@ namespace GradeBook
             if (grade >= 0 && grade <= 100) //left evaluates first
             {
                 grades.Add(grade);
+                if(GradeAdded != null){
+                    GradeAdded(this, new EventArgs());    
+                }
             }
             else
             {
                 throw new ArgumentException($"Invalid {nameof(grade)}");
             }
         }
+        public event GradeAddedDelegate GradeAdded;
 
         public void AddLetterGrade(char letter){ //could also be AddGrade with different signature C# can differentiate based on signature "Method Overloading"
             switch(letter){
@@ -119,6 +123,8 @@ namespace GradeBook
             }
             return lowGrade;
         }
+        
+        
 
         public Stats GetStats(){
             var result = new Stats();

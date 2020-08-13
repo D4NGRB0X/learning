@@ -8,7 +8,8 @@ namespace GradeBook
         static void Main(string[] args)
         {
             
-            var book = new Book("Adam","SCI");           
+            var book = new Book("SCI");
+            book.GradeAdded += OnGradeAdded;           
             while(true){
                 Console.WriteLine("Please enter a grade or q to quit and compute.");
                 var userInput = Console.ReadLine();
@@ -25,9 +26,9 @@ namespace GradeBook
                 catch(FormatException invalidFormatException){
                     Console.WriteLine(invalidFormatException.Message);
                 }
-                finally{
+                /*finally{
                     Console.WriteLine("*****");//This will run no matter what
-                }
+                }*/
                 
             };
 
@@ -38,6 +39,10 @@ namespace GradeBook
             Console.WriteLine($"Highestest grade = {stats.High}");
             Console.WriteLine($"Average grade = {stats.Average}");
             Console.WriteLine($"Overall letter grade is {stats.Letter}");
+        }
+
+        static void OnGradeAdded(object sender, EventArgs e){
+            Console.WriteLine($"Grade added.");
         }
     }
 
