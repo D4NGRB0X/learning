@@ -1,57 +1,59 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace GradeBook
 {
-    public class Book
+    public interface IBook
     {
-
+        void AddGrade(double grade);
+        Stats GetStats();
+        string Name { get; }
+        event GradeAddedDelegate GradeAdded;
+    }
+    public abstract class Book : NamedObject, IBook
+    {
         private List<double> grades;
-        // Long form property creation
-        // private string name; 
-        // public string Name{
-        //     get{
-        //         return name;
-        //     }
-        //     set{
-        //         if(!String.IsNullOrEmpty(value)){
-        //         name = value;
-        //         }
-        //         else{
-        //             throw new ArgumentException($"Invalid {nameof(name)}");
-        //         }
-        //     }
-        // }
+        public List<double> Grades { get => grades; set => grades = value; }
 
-        public string Name{
-            get;
-            set; // private does not allow modification once name is set Read only
+        protected Book(string name) : base(name)
+        {
         }
 
-        //readonly string category; //field can only be changed in constructor
+        public abstract event GradeAddedDelegate GradeAdded;
+        public abstract void AddGrade(double grade);
+        public abstract Stats GetStats();
+    }
+    public class InMemoryBook : Book
+    {
+
         public const string INSTRUCTOR = "Professor X"; // immutable read only field public allows it to be displayed but cannot be manipulated
 
-        public Book(string name) //constructor
+        public InMemoryBook(string name) : base(name)
         {
-            try{
-                
-                grades = new List<double>();
+            try
+            {
+
+                Grades = new List<double>();
                 Name = name;
                 //category;
             }
-            catch(ArgumentException invalidNameExcaption){
-                Console.WriteLine(invalidNameExcaption.Message); 
+            catch (ArgumentException invalidNameExcaption)
+            {
+                Console.WriteLine(invalidNameExcaption.Message);
             }
         }
 
 
-        public void AddGrade(double grade)
+        public override void AddGrade(double grade)
         {
             if (grade >= 0 && grade <= 100) //left evaluates first
             {
-                grades.Add(grade);
-                if(GradeAdded != null){
-                    GradeAdded(this, new EventArgs());    
+                Grades.Add(grade);
+                if (GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
                 }
             }
             else
@@ -59,102 +61,81 @@ namespace GradeBook
                 throw new ArgumentException($"Invalid {nameof(grade)}");
             }
         }
-        public event GradeAddedDelegate GradeAdded;
+        public override event GradeAddedDelegate GradeAdded;
 
-        public void AddLetterGrade(char letter){ //could also be AddGrade with different signature C# can differentiate based on signature "Method Overloading"
-            switch(letter){
-                case 'A':
-                    AddGrade(90.0);
-                    break;
-                
-                case 'B':
-                    AddGrade(80.0);
-                    break;
-                
-                case 'C':
-                    AddGrade(70.0);
-                    break;
-                
-                default:
-                    AddGrade(0.0);
-                    break;
-            }
-        }
 
-        public List<double> GetGrades(){
-            return grades;
-        }
-        public double ComputeAverageGrade()
+
+        public List<double> GetGrades()
         {
-            double result = 0.0;
-            foreach (double grade in grades) // see also for(var i = 0; i boolean iterable.Count; i++)
-            {
-                result += grade;
-            }
-            double average = result / grades.Count;
-            return average;
+            return Grades;
         }
 
-        public double getHighGrade()
+        public override Stats GetStats()
         {
-            double highGrade = double.MinValue;
-            int index = 0;
-            do //will always run once
-            {
-                highGrade = Math.Max(grades[index], highGrade);
-                index++;
-            }
-            while(index < grades.Count);
-            return highGrade;
-        }
-
-        public double getLowGrade()
-        {
-            double lowGrade = double.MaxValue;
-            int index = 0;
-            while(index < grades.Count) // will only run if condition evaluates to true
-            {
-                if(grades[index] == 42.1){
-                    //break; stops loop and returns value
-                    continue; // skips evaluation of item and continues trhough loop
-                }
-                lowGrade = Math.Min(grades[index], lowGrade);
-                index++;
-            }
-            return lowGrade;
-        }
-        
-        
-
-        public Stats GetStats(){
-            var result = new Stats();
-            result.Average = ComputeAverageGrade();
-            result.High = getHighGrade();
-            result.Low = getLowGrade();
-            result.Letter = ComputeLetterGrade(result.Average);
+            var result = new Stats(Grades);
 
             return result;
         }
 
-        public char ComputeLetterGrade(double average)
+
+    }
+
+    public class DiskBook : Book
+    {
+        
+        public DiskBook(string name) : base(name)
         {
-            switch(average){
-                
-                case var d when d >=90.0:
-                    return 'A';
+        }
 
-                case var d when d >=80.0 && d <=90.0:
-                    return 'B';
-                
-                case var d when d >=70.0 && d <=80.0:
-                    return 'C';
+        public override event GradeAddedDelegate GradeAdded;
 
-                case var d when d >=60.0 && d <=70.0:
-                    return 'D';
-                
-                default:
-                    return 'F';
+        public override void AddGrade(double grade)
+        {
+            using (var writer = File.AppendText($"{Name}.txt"))
+            {
+                writer.WriteLine(grade);
+                if (GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
             }
+
+        }
+
+        public override Stats GetStats()
+        {
+            // var reader = File.ReadLines($"{Name}.txt");
+            // var result = new Stats(reader.Cast<double>().ToList());
+ 
+            Grades = new List<double>();
+            using(var reader = File.OpenText($"{Name}.txt")){;
+                var line = reader.ReadLine();
+                while(line!= null){
+                    var number = double.Parse(line);
+                    Grades.Add(number);
+                    line = reader.ReadLine();
+                }
+            }
+            var result = new Stats(Grades);
+            return result;
         }
     }
 }
+
+// Long form property creation
+// private string name; 
+// public string Name{
+//     get{
+//         return name;
+//     }
+//     set{
+//         if(!String.IsNullOrEmpty(value)){
+//         name = value;
+//         }
+//         else{
+//             throw new ArgumentException($"Invalid {nameof(name)}");
+//         }
+//     }
+// }
+
+//readonly string category; //field can only be changed in constructor

@@ -69,9 +69,9 @@ namespace GradeBook.Tests
             Assert.Equal("Moby Dick",book1.Name);
         }
 
-        private void GetBookSetNameRef(ref Book book, string name) //out parameter requires output
+        private void GetBookSetNameRef(ref InMemoryBook book, string name) //out parameter requires output
         {
-            book = new Book(name);
+            book = new InMemoryBook(name);
         }
 
         [Fact]
@@ -85,9 +85,9 @@ namespace GradeBook.Tests
             //my guess is this will fail
         }
 
-        private void GetBookSetName(Book book, string name)
+        private void GetBookSetName(InMemoryBook book, string name)
         {
-            book = new Book(name);
+            book = new InMemoryBook(name);
         }
 
         [Fact]
@@ -100,7 +100,7 @@ namespace GradeBook.Tests
             Assert.Equal("Moby Dick",book1.Name);
         }   
 
-        private void SetName(Book book, string name){
+        private void SetName(InMemoryBook book, string name){
             book.Name = name; 
         }
 
@@ -136,8 +136,8 @@ namespace GradeBook.Tests
             
         }
 
-        Book GetBook(string name){
-            return new Book(name);
+        InMemoryBook GetBook(string name){
+            return new InMemoryBook(name);
         }
     }
 }
