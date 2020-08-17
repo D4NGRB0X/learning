@@ -1,0 +1,13 @@
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\bin\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.exe
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\bin\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.deps.json
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\bin\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.runtimeconfig.json
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\bin\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.runtimeconfig.dev.json
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\bin\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.dll
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\bin\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.pdb
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\obj\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.csprojAssemblyReference.cache
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\obj\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.AssemblyInfoInputs.cache
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\obj\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.AssemblyInfo.cs
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\obj\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\obj\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.dll
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\obj\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.pdb
+C:\Users\Thomas\Desktop\learning\C# Collections\TopTenPopulations_ReadFromCSV\TopTenPopulations_ReadFromCSV\obj\Debug\netcoreapp3.1\TopTenPopulations_ReadFromCSV.genruntimeconfig.cache
