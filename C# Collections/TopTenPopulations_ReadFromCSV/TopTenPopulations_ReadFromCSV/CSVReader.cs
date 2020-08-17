@@ -19,5 +19,17 @@ namespace TopTenPopulations_ReadFromCSV
             Country[] countries = new Country[nCountries];
             return countries;
         }
+    
+        public Country ReadCountryFromCSVLine(string csvLine)
+        {
+            string[] data = csvLine.Split(',');
+
+            string name = data[0];
+            string code = data[1];
+            string region = data[2];
+            int population = int.Parse(data[3]);
+
+            return new Country(name, code, region, population);
+        }
     }
 }
