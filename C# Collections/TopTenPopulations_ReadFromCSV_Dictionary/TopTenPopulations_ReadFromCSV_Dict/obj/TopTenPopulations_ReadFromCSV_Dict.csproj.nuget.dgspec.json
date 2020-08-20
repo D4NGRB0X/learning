@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\DaysOfWeek.csproj": {}
+    "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_Dictionary\\TopTenPopulations_ReadFromCSV_Dict\\TopTenPopulations_ReadFromCSV_Dict.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\DaysOfWeek.csproj": {
+    "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_Dictionary\\TopTenPopulations_ReadFromCSV_Dict\\TopTenPopulations_ReadFromCSV_Dict.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\DaysOfWeek.csproj",
-        "projectName": "DaysOfWeek",
-        "projectPath": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\DaysOfWeek.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_Dictionary\\TopTenPopulations_ReadFromCSV_Dict\\TopTenPopulations_ReadFromCSV_Dict.csproj",
+        "projectName": "TopTenPopulations_ReadFromCSV_Dict",
+        "projectPath": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_Dictionary\\TopTenPopulations_ReadFromCSV_Dict\\TopTenPopulations_ReadFromCSV_Dict.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\obj\\",
+        "outputPath": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_Dictionary\\TopTenPopulations_ReadFromCSV_Dict\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

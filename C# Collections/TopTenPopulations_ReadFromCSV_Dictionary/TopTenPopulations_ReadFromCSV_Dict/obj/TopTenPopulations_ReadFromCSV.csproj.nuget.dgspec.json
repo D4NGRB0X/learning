@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\DaysOfWeek.csproj": {}
+    "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_List\\TopTenPopulations_ReadFromCSV\\TopTenPopulations_ReadFromCSV.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\DaysOfWeek.csproj": {
+    "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_List\\TopTenPopulations_ReadFromCSV\\TopTenPopulations_ReadFromCSV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\DaysOfWeek.csproj",
-        "projectName": "DaysOfWeek",
-        "projectPath": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\DaysOfWeek.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_List\\TopTenPopulations_ReadFromCSV\\TopTenPopulations_ReadFromCSV.csproj",
+        "projectName": "TopTenPopulations_ReadFromCSV",
+        "projectPath": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_List\\TopTenPopulations_ReadFromCSV\\TopTenPopulations_ReadFromCSV.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\DaysOfWeek\\DaysOfWeek\\obj\\",
+        "outputPath": "C:\\Users\\Thomas\\Desktop\\learning\\C# Collections\\TopTenPopulations_ReadFromCSV_List\\TopTenPopulations_ReadFromCSV\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
