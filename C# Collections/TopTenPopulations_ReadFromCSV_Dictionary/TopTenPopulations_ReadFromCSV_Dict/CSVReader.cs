@@ -14,7 +14,7 @@ namespace TopTenPopulations_ReadFromCSV_Dict
             this._csvFilePath = csvFilePath;
         }
 
-        public Dictionary<string, Country> ReadAllCountries() //method returning List of all country objects
+        public Dictionary<string, Country> ReadAllCountries() //method returning Dict of all country objects with a key of country code and a value of country object
         {
             var countries = new Dictionary<string, Country>();
             using (StreamReader reader = new StreamReader(_csvFilePath)) // < disposes of StreamReader and releases file once loop is complete 
@@ -24,7 +24,7 @@ namespace TopTenPopulations_ReadFromCSV_Dict
                 string csvLine;
                 while((csvLine = reader.ReadLine()) != null)
                 {
-                    Country country = ReadCountryFromCSVLine(csvLine);
+                    Country country = ReadCountryFromCSVLine(csvLine);// temporary variable to hold read values
                     countries.Add(country.Code, country);
                 }
             }
