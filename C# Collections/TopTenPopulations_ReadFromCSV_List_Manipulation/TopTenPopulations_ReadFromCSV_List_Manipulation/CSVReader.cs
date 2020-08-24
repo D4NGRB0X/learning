@@ -32,7 +32,8 @@ namespace TopTenPopulations_ReadFromCSV_List_Manipulation
 
         public void RemoveCommaCountries(List<Country> countries)
         {
-            countries.RemoveAll(x => x.Name.Contains(','));
+            countries.RemoveAll(x => x.Name.Contains(',')); // using Built-in
+
             //for (int index = countries.Count-1; index >= 0 ; index--)
             //{
             //    if (countries[index].Name.Contains(','))
