@@ -19,7 +19,7 @@ namespace TopTenPopulations_ReadFromCSV_LINQ
             countries.Insert(lilliputIndex, lilliput);
             countries.RemoveAt(lilliputIndex);
 
-            foreach(Country country in countries.Where(x=>!x.Name.Contains(',')).Take(20).OrderBy(x=>x.Name))
+            foreach(Country country in countries.Where(x=>!x.Name.Contains(',')).Take(20).OrderBy(x=>x.Name)) //Linq ignores data LSQ mimics SQL
             {
                 Console.WriteLine($"{country.Population}: {country.Name}");
 

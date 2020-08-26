@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\TopTenPopulations_ReadFromCSV_List"
+    "\\TopTenPopulations_ReadFromCSV_LINQ"
   ],
-  "SelectedNode": "\\TopTenPopulations_ReadFromCSV_List\\Program.cs",
+  "SelectedNode": "\\TopTenPopulations_ReadFromCSV_LINQ\\obj",
   "PreviewInSolutionExplorer": false
 }
