@@ -1,5 +1,6 @@
 using ACM.BL;
 using System;
+using System.ComponentModel.DataAnnotations;
 using Xunit;
 
 namespace ACM.BLTest
@@ -53,6 +54,26 @@ namespace ACM.BLTest
             string actual = customer.FullName;
 
             //--ASSERT
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ValidateValid()
+        {
+            //--ARRANGE
+            var customer = new Customer
+            {
+                LastName = "Underfoot",
+                EmailAddress = "orion.underfoot@DBXstudios.com",
+            };
+
+            var expected = true;
+            //--ACT
+
+            var actual = customer.Validate();
+
+            //--ASSERT
+
             Assert.Equal(expected, actual);
         }
     }
