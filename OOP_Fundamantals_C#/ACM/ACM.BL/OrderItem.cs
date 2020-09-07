@@ -28,7 +28,6 @@ namespace ACM.BL
             if (Quantity <= 0) isValid = false;
             return isValid;
         }
-
         public OrderItem Retrieve()
         {
             return new OrderItem();
@@ -38,5 +37,6 @@ namespace ACM.BL
         {
             return true;
         }
+
     }
 }

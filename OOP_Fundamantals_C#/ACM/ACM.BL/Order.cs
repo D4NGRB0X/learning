@@ -15,7 +15,7 @@ namespace ACM.BL
         {
             OrderId = orderId;
         }
-        public DateTimeOffset/ OrderDate { get; set; }
+        public DateTimeOffset? OrderDate { get; set; }
         public int OrderId { get; private set; }
 
         public bool Validate()
@@ -25,14 +25,5 @@ namespace ACM.BL
             return isValid;
         }
 
-        public Order Retrieve(int orderId)
-        {
-            return new Order();
-        }
-
-        public bool Save()
-        {
-            return true;
-        }
     }
 }

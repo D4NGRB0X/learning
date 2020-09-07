@@ -1,6 +1,5 @@
 ﻿using ACM.BL;
 using System;
-using System.ComponentModel.DataAnnotations;
 using Xunit;
 
 namespace ACM.BLTest
@@ -10,10 +9,11 @@ namespace ACM.BLTest
         [Fact]
         public void OrderDateTest()
         {
+            
             //--ARRANGE
             Order order = new Order
-            { OrderDate = "09/04/2020" };
-            var expected = "09/04/2020";
+            { OrderDate = DateTime.Parse("09/04/2020"), };
+            var expected = DateTime.Parse("09/04/2020");
             //--ACT
             var actual = order.OrderDate;
             //--ASSERT
@@ -23,8 +23,9 @@ namespace ACM.BLTest
         [Fact]
         public void ValidateValid()
         {
+            
             //--ARRANGE
-            Order order = new Order { OrderDate = DateTime.Now.ToString() };
+            Order order = new Order { OrderDate = DateTime.Now };
             var expected = true;
             //--ACT
             var actual = order.Validate();
