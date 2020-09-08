@@ -12,7 +12,7 @@ namespace ACM.BLTest
             
             //--ARRANGE
             Order order = new Order
-            { OrderDate = DateTime.Parse("09/04/2020"), };
+            { OrderDate = Convert.ToDateTime("09/04/2020"), };
             var expected = DateTime.Parse("09/04/2020");
             //--ACT
             var actual = order.OrderDate;

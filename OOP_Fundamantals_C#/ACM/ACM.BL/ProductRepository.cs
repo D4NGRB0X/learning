@@ -6,9 +6,20 @@ namespace ACM.BL
 {
     class ProductRepository
     {
-        public Product Retrieve()
+        public Product Retrieve(int productId)
         {
-            return new Product();
+            Product product = new Product(productId);
+
+            //testing
+            if(productId == 2)
+            {
+                product.ProductName = "Sting";
+                product.ProductDescription = "Human sized dagger that glows blue when Orcs are in the area";
+                product.ProductPriceNow = 1000.00M;
+            }
+
+            return product;
+            //return new Product(productId);
         }
 
         public bool Save()

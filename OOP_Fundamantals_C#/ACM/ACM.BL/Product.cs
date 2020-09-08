@@ -15,15 +15,15 @@ namespace ACM.BL
         {
             ProductId = productId;
         }
-        public string ProducrName { get; set; }
+        public string ProductName { get; set; }
         public string ProductDescription { get; set; }
-        public double? ProductPriceNow { get; set; }
+        public decimal? ProductPriceNow { get; set; }
         public int ProductId { get; private set; }
 
         public bool Validate()
         {
             var isValid = true;
-            if (string.IsNullOrWhiteSpace(ProducrName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(ProductName)) isValid = false;
             if (ProductPriceNow == null) isValid = false;
             return isValid;
         }

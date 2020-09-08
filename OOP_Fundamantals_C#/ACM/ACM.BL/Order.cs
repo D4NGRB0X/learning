@@ -15,6 +15,7 @@ namespace ACM.BL
         {
             OrderId = orderId;
         }
+        
         public DateTimeOffset? OrderDate { get; set; }
         public int OrderId { get; private set; }
 
