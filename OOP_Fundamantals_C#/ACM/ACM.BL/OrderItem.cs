@@ -16,7 +16,7 @@ namespace ACM.BL
             OrderId = orderId;
         }
         public int OrderId { get; private set; }
-        public Product Product { get; set; }
+        public ProductRepository Product { get; set; }
         public int Quantity { get; set; }
         public double? PurchasePrice { get; set; }
 
