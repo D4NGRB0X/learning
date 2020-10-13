@@ -6,7 +6,7 @@ namespace ACM.BL
 {
     public class Customer
     {
-        public Customer()
+        public Customer(): this(0)
         {
 
         }
@@ -14,9 +14,12 @@ namespace ACM.BL
         public Customer(int customerId)
         {
             CustomerId = customerId;
+            CustomerAddresses = new List<Address>();
         }
 
+        public List<Address> CustomerAddresses { get; set; }
         public int CustomerId { get; private set; }
+        public int CustomerType { get; set; }
         public string EmailAddress { get; set; }
         public string FullName
         {
@@ -43,6 +46,8 @@ namespace ACM.BL
             get { return _lastName; }
             set { _lastName = value; }
         }
+
+        public override string ToString() => FullName;
 
         public bool Validate()
         {

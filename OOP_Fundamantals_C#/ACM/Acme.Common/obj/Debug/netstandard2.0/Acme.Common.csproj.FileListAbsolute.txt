@@ -1,0 +1,9 @@
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\bin\Debug\netstandard2.0\Acme.Common.deps.json
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\bin\Debug\netstandard2.0\Acme.Common.dll
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\bin\Debug\netstandard2.0\Acme.Common.pdb
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\obj\Debug\netstandard2.0\Acme.Common.csprojAssemblyReference.cache
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\obj\Debug\netstandard2.0\Acme.Common.AssemblyInfoInputs.cache
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\obj\Debug\netstandard2.0\Acme.Common.AssemblyInfo.cs
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\obj\Debug\netstandard2.0\Acme.Common.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\obj\Debug\netstandard2.0\Acme.Common.dll
+C:\Users\Thomas\Desktop\learning\OOP_Fundamantals_C#\ACM\Acme.Common\obj\Debug\netstandard2.0\Acme.Common.pdb

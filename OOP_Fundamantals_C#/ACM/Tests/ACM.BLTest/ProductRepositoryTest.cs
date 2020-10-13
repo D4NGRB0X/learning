@@ -22,6 +22,8 @@ namespace ACM.BLTest
             //--ACT
             var actual = productRepo.Retrieve(2);
             //--ASSERT
+            Assert.Equal(expected.ProductPriceNow, actual.ProductPriceNow);
+            Assert.Equal(expected.ProductDescription, actual.ProductDescription);
             Assert.Equal(expected.ProductName, actual.ProductName );
         }
     }

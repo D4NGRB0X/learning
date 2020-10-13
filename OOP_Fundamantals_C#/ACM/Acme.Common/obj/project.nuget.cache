@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ECZDo9bPeeXKvKOno9+BJLoJ5U9WgzVShD2I2VTRRXvYzASN5WWmtMUWQhAM78NIrFSF5SAmYyySQjlnfZ7Kpg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thomas\\Desktop\\learning\\OOP_Fundamantals_C#\\ACM\\Acme.Common\\Acme.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
