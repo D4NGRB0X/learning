@@ -3,9 +3,14 @@ using System.Diagnostics;
 
 namespace Acme.Common
 {
-    public class StringHandler
+    public static class StringHandler
     {
-        public string InsertSpaces(string source)
+        /// <summary>
+        /// Insert Spaces before each capital letter in a string
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static string InsertSpaces(this string source)
         {
             string result = string.Empty;
             if (!String.IsNullOrWhiteSpace(source))
