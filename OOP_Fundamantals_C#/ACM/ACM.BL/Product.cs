@@ -6,7 +6,7 @@ using System.Xml.Linq;
 
 namespace ACM.BL
 {
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
 
 
@@ -44,7 +44,8 @@ namespace ACM.BL
             if (ProductPriceNow == null) isValid = false;
             return isValid;
         }
-
+        public string Log() =>
+            $"{ProductId}: {ProductName} Detail: {ProductDescription} Status: {EntityState.ToString()}";
 
     }
 }

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Acme.Common\Acme.Common.csproj" />
+    <ProjectReference Include="..\Tests\Acme.CommonTest\Acme.CommonTest.csproj" />
   </ItemGroup>
 
 </Project>
