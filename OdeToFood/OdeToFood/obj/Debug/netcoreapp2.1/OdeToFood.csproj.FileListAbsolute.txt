@@ -41,3 +41,4 @@ C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\Ode
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.Core.pdb
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Detail.cshtml.g.cs
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\NotFound.cshtml.g.cs
+C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Edit.cshtml.g.cs

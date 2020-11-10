@@ -6,3 +6,4 @@ C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.csproj.CoreCompileInputs.cache
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.dll
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.pdb
+C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.csprojAssemblyReference.cache
