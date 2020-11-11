@@ -6,6 +6,6 @@
         Mexican,
         Italian,
         Indian,
-
+        American,
     }
 }
