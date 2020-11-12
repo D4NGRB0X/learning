@@ -6,7 +6,10 @@ C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.csprojAssemblyReference.cache
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.AssemblyInfoInputs.cache
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.AssemblyInfo.cs
-C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.csproj.CoreCompileInputs.cache
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.csproj.CopyComplete
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.dll
 C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.pdb
+C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.json
+C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.dev.json
+C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\Desktop\learning\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.genruntimeconfig.cache
