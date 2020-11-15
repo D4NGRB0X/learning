@@ -30,18 +30,25 @@
                 <td><a asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">@restaurant.Name</a></td>
                 <td>@restaurant.Cuisine</td>
                 <td>@restaurant.Location</td>
-                <td><a class="btn btn-lg"
+                <td>
+                    <a class="btn btn-lg"
                        asp-page="./Detail"
                        asp-route-restaurantId="@restaurant.Id"><i class="glyphicon glyphicon-zoom-in"></i></a>
                     <a class="btn btn-lg"
                        asp-page="./Edit"
-                       asp-route-restaurantId="@restaurant.Id"><i class="glyphicon glyphicon-edit"></i></a>    
+                       asp-route-restaurantId="@restaurant.Id"><i class="glyphicon glyphicon-edit"></i></a>
+                    <a class="btn btn-lg btn-danger"
+                       asp-page="./Delete"
+                       asp-route-restaurantId="@restaurant.Id"><i class="glyphicon glyphicon-trash"></i></a>
                 </td>
             </tr>
         }
     </table>
 </div>
 <a asp-page="./Edit" class="btn btn-primary">Add New</a>
+
+@section footer{ 
 <div>
     @Model.Message
 </div>
+}
