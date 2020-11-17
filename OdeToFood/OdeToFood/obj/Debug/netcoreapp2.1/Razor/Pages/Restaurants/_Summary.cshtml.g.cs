@@ -24,7 +24,7 @@ using OdeToFood.Core;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a65fda821ca96fd25a7d224056635e5fef400808", @"/Pages/Restaurants/_Summary.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0820fb6dbe507f6ce740cdfd07cdc5236e4275df", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5bd7a9498867045fbda097e3208cbd1c6a5a509f", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Restaurants__Summary : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Restaurant>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-lg"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -88,7 +88,7 @@ using OdeToFood.Core;
             WriteLiteral("</span>\r\n        </div>\r\n        <div class=\"panel-footer\">\r\n            ");
             EndContext();
             BeginContext(370, 156, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03a4b891e214447eaef72c9dd5237eb6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9701ce478a94704887f9d43e6226b81", async() => {
                 BeginContext(479, 43, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-zoom-in\"></i>");
                 EndContext();
@@ -124,7 +124,7 @@ using OdeToFood.Core;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(540, 151, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f1dc5177f2347a583c465494ea6882e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c472670c25ad4916b410b92f92a2fc07", async() => {
                 BeginContext(647, 40, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-edit\"></i>");
                 EndContext();
@@ -160,7 +160,7 @@ using OdeToFood.Core;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(705, 165, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a558945641a4cc5b37ee47b51e0fd0d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c74b643ac8c84649a6cf5a1363c6e76f", async() => {
                 BeginContext(825, 41, true);
                 WriteLiteral("<i class=\"glyphicon glyphicon-trash\"></i>");
                 EndContext();
