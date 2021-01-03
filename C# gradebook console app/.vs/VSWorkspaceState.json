@@ -6,6 +6,6 @@
     "\\gradebook\\test",
     "\\gradebook\\test\\GradeBook.Tests"
   ],
-  "SelectedNode": "\\gradebook\\test",
+  "SelectedNode": "\\gradebook\\test\\GradeBook.Tests\\ReferenceTests.cs",
   "PreviewInSolutionExplorer": false
 }
